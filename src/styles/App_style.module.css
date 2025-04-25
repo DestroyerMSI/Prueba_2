@@ -1,0 +1,183 @@
+.menu_movile{
+    display: none;
+}
+
+.main_app{
+    width: 100vw;
+
+    max-width:1980px;
+    min-height: 300px;
+    display: flex;
+    position: relative;
+}
+.div_menu{
+    height: 100%;
+    position: relative;
+    width: 20vw;
+    z-index: 999;
+}
+.div_menu_escritorio{
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 20vw;
+    max-width: 396px;
+    background-color: rgb(15, 14, 43);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    color: white;
+   position: fixed;
+   top: 0;
+  margin: 0;
+}
+.div_menu_escritorio_h{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    width: 100%;
+}
+
+.div_menu_escritorio h1{
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+.div_menu_escritorio_h form{
+    display: flex;
+    background:  rgba(25, 23, 63, 0.616);
+    align-items: center;
+   margin-left: 10%;
+   margin-bottom: 20px;
+}
+.div_menu_escritorio_h form img{
+    width: 45px;
+    height: 45px;
+}
+.div_menu_escritorio_h form input{
+   color: white;
+   background: transparent;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5px 10px; 
+    margin-left: 5px;
+    border-radius: 6px;
+    border-style: none;
+    
+}
+.div_menu_escritorio_h1 {
+    display: flex;
+    align-items: center;
+    width: 80%;
+   text-decoration: none;
+   color: white;
+   margin-left: 10%;
+   margin-bottom: 25px;
+   transition: transform 500ms ease-in-out;
+
+}
+.div_menu_escritorio_h1 span{
+    padding: 0;
+    border-bottom: 0.5px solid transparent;
+}
+.div_menu_escritorio_h1 img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.div_menu_escritorio_h1:hover{
+transform: scale(1.1);
+cursor: pointer;
+
+}
+.div_menu_escritorio_h1:hover  span{
+border-bottom-color: white;
+
+}
+ .div_movile_show{
+    transform: translateX(100vw);
+ }
+ .div_movile_hidden{
+    transform: translateX(0);
+ 
+ }
+@media screen and (max-width:1210px) {
+    .div_menu_escritorio{
+        display: none;
+    }
+    .div_menu{
+        height: 0;
+        width:0;
+       
+    }
+    .menu_movile{
+        display: flex;
+        z-index: 100;
+        position: fixed;
+        top: 1%;
+        left: 2%;
+        width:0;
+    }
+    .menu_movile button{
+        border: none;
+        background: transparent;
+        position: fixed;
+        top: 5px;
+        transition: transform 500ms ease-in-out;
+       
+    }
+    .menu_movile button img{
+         width: 50px;
+         height: 50px;
+    }
+    .menu_movile button:hover{
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+    .styles_mobiles_a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .styles_mobiles_a form {
+        width: 100%;
+        display: flex;
+       margin-bottom: 20px;
+       width: 100%;
+    padding-left: 30%;
+    background: rgba(255, 255, 255, 0.041);
+    }
+    
+    .styles_mobiles_a form img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .styles_mobiles_a form input {
+        border-radius: 4px;
+        padding: 4px 10px;
+        background: rgb(255, 255, 255);
+        border: none;
+        color: black;
+    }
+    
+}
+
+@media screen and (max-width: 380px) {
+    .menu_movile button img{
+        width: 40px;
+        height: 40px;
+   }
+   .styles_mobiles_a form input {
+    border-radius: 12px;
+    padding: 2px 7px;
+    background:transparent;
+    border: none;
+    color: white;
+}
+}
