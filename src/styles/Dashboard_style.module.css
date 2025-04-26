@@ -205,8 +205,9 @@ margin-bottom: 14px;
 .div_cajas_fila_2_1{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100.5%;
   height: 100%;
+  margin-left: -0.5%;
    
 }
 .div_cajas_fila_2_1_h_1{
@@ -390,6 +391,12 @@ background: black;
 }
 .section_main{
     padding-bottom: 100px;
+}
+
+.div_cajas_fila_2_1{
+    width: 100%;
+  margin-left: 0%;
+   
 }
 }
 
